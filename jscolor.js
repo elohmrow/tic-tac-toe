@@ -521,7 +521,7 @@ var jsc = {
 
 	getPadYComponent : function (thisObj) {
 		switch (thisObj.mode.charAt(1).toLowerCase()) {
-			case 'v': return 'v'; break;
+			case 'v': return 'v';
 		}
 		return 's';
 	},
@@ -530,8 +530,8 @@ var jsc = {
 	getSliderComponent : function (thisObj) {
 		if (thisObj.mode.length > 2) {
 			switch (thisObj.mode.charAt(2).toLowerCase()) {
-				case 's': return 's'; break;
-				case 'v': return 'v'; break;
+				case 's': return 's';
+				case 'v': return 'v';
 			}
 		}
 		return null;

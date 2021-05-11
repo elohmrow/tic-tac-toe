@@ -318,7 +318,7 @@ function insertToken(event) {
       ]
     );
 
-    if (checkDraw() & !state.winner) declareDraw();
+    if (checkDraw() && !state.winner) declareDraw();
 
     switchPlayer(state.currentPlayer);
   } else {
