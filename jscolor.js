@@ -29,6 +29,9 @@ var jsc = {
 		jsc.attachEvent(window, 'resize', jsc.onWindowResize);
 	},
 
+    getOptsString : function (optsStr) {
+        return optsStr;
+    }
 
 	tryInstallOnElements : function (elms, className) {
 		var matchClass = new RegExp('(^|\\s)(' + className + ')(\\s*(\\{[^}]*\\})|\\s|$)', 'i');
@@ -64,7 +67,8 @@ var jsc = {
 				var opts = {};
 				if (optsStr) {
 					try {
-						opts = (new Function ('return (' + optsStr + ')'))();
+						opts = getOptsString();
+                        
 					} catch(eParseError) {
 						jsc.warn('Error parsing jscolor options: ' + eParseError + ':\n' + optsStr);
 					}
