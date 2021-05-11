@@ -797,7 +797,7 @@ var jsc = {
 				hGrad.addColorStop(3 / 6, '#0FF');
 				hGrad.addColorStop(4 / 6, '#00F');
 				hGrad.addColorStop(5 / 6, '#F0F');
-				hGrad.addColorStop(6 / 6, '#F00');
+				hGrad.addColorStop(1, '#F00');
 
 				ctx.fillStyle = hGrad;
 				ctx.fillRect(0, 0, canvas.width, canvas.height);
